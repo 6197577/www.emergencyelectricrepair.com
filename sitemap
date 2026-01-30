@@ -1,0 +1,92 @@
+ai-electrical-leads/
+├── app/
+│   ├── (marketing)/
+│   │   ├── page.tsx                    # Main landing page
+│   │   ├── pricing/
+│   │   │   └── page.tsx                # Dynamic pricing page
+│   │   ├── cities/
+│   │   │   └── [slug]/
+│   │   │       └── page.tsx           # City-specific pages
+│   │   └── chat/
+│   │       └── page.tsx                # AI Sales Chat
+│   ├── dashboard/
+│   │   ├── page.tsx                    # Contractor dashboard
+│   │   ├── leads/
+│   │   │   └── page.tsx               # Lead management
+│   │   └── analytics/
+│   │       └── page.tsx               # Analytics dashboard
+│   ├── api/
+│   │   ├── stripe/
+│   │   │   ├── webhook/route.ts
+│   │   │   ├── checkout/route.ts
+│   │   │   └── subscriptions/route.ts
+│   │   ├── gemini/
+│   │   │   ├── chat/route.ts
+│   │   │   └── generate/route.ts
+│   │   ├── pricing/
+│   │   │   ├── dynamic/route.ts
+│   │   │   └── calculate/route.ts
+│   │   └── webhooks/
+│   │       └── supabase/route.ts
+│   ├── layout.tsx
+│   └── globals.css
+├── components/
+│   ├── ui/
+│   │   ├── Button.tsx
+│   │   ├── Card.tsx
+│   │   ├── Modal.tsx
+│   │   └── PricingCard.tsx
+│   ├── chat/
+│   │   ├── AISalesChat.tsx
+│   │   ├── MessageBubble.tsx
+│   │   └── ChatInput.tsx
+│   ├── pricing/
+│   │   ├── DynamicPriceDisplay.tsx
+│   │   ├── TierSelector.tsx
+│   │   └── PriceCalculator.tsx
+│   ├── leads/
+│   │   ├── LeadCard.tsx
+│   │   ├── LeadFilter.tsx
+│   │   └── LeadMap.tsx
+│   ├── data-capture/
+│   │   ├── DataCaptureWrapper.tsx
+│   │   ├── TrackedElement.tsx
+│   │   └── AnalyticsProvider.tsx
+│   └── dashboard/
+│       ├── StatsCard.tsx
+│       ├── RevenueChart.tsx
+│       └── LeadFunnel.tsx
+├── lib/
+│   ├── supabase/
+│   │   ├── client.ts
+│   │   ├── server.ts
+│   │   └── schema.sql
+│   ├── stripe/
+│   │   ├── config.ts
+│   │   ├── checkout.ts
+│   │   └── webhooks.ts
+│   ├── gemini/
+│   │   ├── client.ts
+│   │   ├── sales-agent.ts
+│   │   └── content-generator.ts
+│   ├── pricing/
+│   │   ├── DynamicPricingEngine.ts
+│   │   ├── TieredPlans.ts
+│   │   └── CompetitorTracker.ts
+│   └── utils/
+│       ├── analytics.ts
+│       └── seo.ts
+├── scripts/
+│   ├── seo-generator.py
+│   ├── marketing-automation.py
+│   └── data-sync.js
+├── public/
+│   ├── robots.txt
+│   └── sitemap.xml
+├── .env.local
+├── .gitignore
+├── package.json
+├── tailwind.config.js
+├── next.config.js
+├── tsconfig.json
+└── README.md
