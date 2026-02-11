@@ -1,1 +1,1 @@
-User-agent: *Allow: /Sitemap: https://www.emergencyelectricrepair.com/sitemap.xml
+# Electric Drs Robots.txt - Optimized for Localized SEOUser-agent: *Allow: /# Direct Google and Bing to the 50-city sitemapSitemap: https://www.emergencyelectricrepair.com/sitemap.xml# Prevent crawlers from indexing internal test files or system foldersDisallow: /private/Disallow: /tmp/
